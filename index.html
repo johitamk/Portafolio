@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Johan Kano | Portafolio Web</title>
+  <!-- Fuente moderna Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <!-- Iconos Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= BARRA DE NAVEGACIÓN ================= -->
+  <header class="header">
+    <a href="#inicio" class="logo">Johan<span>Kano</span>.</a>
+
+    <i class="bx bx-menu" id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#inicio" class="active">Inicio</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#galeria">Galería</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#contactos">Contactos</a>
+    </nav>
+  </header>
+
+  <!-- ================= 1. SECCIÓN INICIO ================= -->
+  <section class="inicio" id="inicio">
+    <div class="inicio-content">
+      <h3>Hola, soy</h3>
+      <h1>Johan Kano</h1>
+      <h3>Soy <span class="multiple-text"></span></h3>
+      <p>
+        Apasionado por el desarrollo web, la creación de interfaces modernas y soluciones digitales eficientes adaptadas a cualquier dispositivo.
+      </p>
+
+      <!-- EDITA AQUÍ: Tus redes sociales -->
+      <div class="social-media">
+        <a href="https://github.com/" target="_blank" title="GitHub"><i class="bx bxl-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://wa.me/51999999999" target="_blank" title="WhatsApp"><i class="bx bxl-whatsapp"></i></a>
+        <a href="https://instagram.com/" target="_blank" title="Instagram"><i class="bx bxl-instagram"></i></a>
+      </div>
+
+      <div class="btn-group">
+        <a href="#galeria" class="btn">Ver Proyectos</a>
+        <a href="#contactos" class="btn btn-outline">Contáctame</a>
+      </div>
+    </div>
+
+    <!-- Foto principal de Johan Kano -->
+    <div class="inicio-img">
+      <img src="img/perfil.png" alt="Foto de Johan Kano" />
+    </div>
+  </section>
+
+  <!-- ================= 2. SECCIÓN NOSOTROS ================= -->
+  <section class="nosotros" id="nosotros">
+    <div class="nosotros-img">
+      <img src="img/perfil.png" alt="Sobre Johan Kano" />
+    </div>
+
+    <div class="nosotros-content">
+      <h2 class="heading">Sobre <span>Nosotros</span></h2>
+      <h3>Desarrollador Web Frontend & Backend</h3>
+      <p>
+        Mi nombre es <strong>Johan Kano</strong>. Me dedico a diseñar y desarrollar páginas web dinámicas, rápidas y 100% responsivas. Mi enfoque está en combinar buen diseño visual con código limpio utilizando estándares actuales.
+      </p>
+
+      <!-- Habilidades técnicas -->
+      <div class="skills-grid">
+        <div class="skill-item"><i class="bx bxl-html5"></i> HTML5</div>
+        <div class="skill-item"><i class="bx bxl-css3"></i> CSS3</div>
+        <div class="skill-item"><i class="bx bxl-javascript"></i> JavaScript</div>
+        <div class="skill-item"><i class="bx bxl-git"></i> Git & GitHub</div>
+        <div class="skill-item"><i class="bx bx-devices"></i> Diseño Responsive</div>
+        <div class="skill-item"><i class="bx bx-server"></i> Hosting Web</div>
+      </div>
+
+      <a href="#contactos" class="btn">Trabajemos Juntos</a>
+    </div>
+  </section>
+
+  <!-- ================= 3. SECCIÓN GALERÍA (PROYECTOS) ================= -->
+  <section class="galeria" id="galeria">
+    <h2 class="heading">Mi <span>Galería</span> de Proyectos</h2>
+
+    <!-- Filtros de categoría -->
+    <div class="filtros">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="negocios">Negocios & Servicios</button>
+      <button class="filter-btn" data-filter="personal">Web Personal</button>
+    </div>
+
+    <div class="galeria-container">
+      <!-- PROYECTO 1: RESTAURANTE JAPONÉS -->
+      <div class="galeria-box" data-category="negocios">
+        <img src="img/proyecto1.jpg" alt="Kano Japanese Fine Dining" />
+        <div class="galeria-layer">
+          <h4>Kano Japanese Fine Dining</h4>
+          <p>Web gastronómica de alta cocina japonesa con reservas y platos estrella.</p>
+          <div class="galeria-links">
+            <a href="https://tiny-manatee-a174d6.netlify.app/" target="_blank" title="Abrir Proyecto en Nueva Pestaña"><i class="bx bx-link-external"></i></a>
+            <button class="preview-btn" data-url="https://tiny-manatee-a174d6.netlify.app/" data-title="Kano Japanese Fine Dining" title="Vista Previa en Vivo"><i class="bx bx-show"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROYECTO 2: SOBRE MÍ JOHAN KANO -->
+      <div class="galeria-box" data-category="personal">
+        <img src="img/proyecto2.jpg" alt="Portafolio Web Johan Kano" />
+        <div class="galeria-layer">
+          <h4>Sobre Mí — Johan Kano</h4>
+          <p>Landing page personal de desarrollo Full Stack e instructor informático.</p>
+          <div class="galeria-links">
+            <a href="https://johankano.netlify.app/" target="_blank" title="Abrir Proyecto en Nueva Pestaña"><i class="bx bx-link-external"></i></a>
+            <button class="preview-btn" data-url="https://johankano.netlify.app/" data-title="Sobre Mí — Johan Kano" title="Vista Previa en Vivo"><i class="bx bx-show"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROYECTO 3: SPA CAAOH -->
+      <div class="galeria-box" data-category="negocios">
+        <img src="img/proyecto3.jpg" alt="Spa CAAOH" />
+        <div class="galeria-layer">
+          <h4>Spa CAAOH</h4>
+          <p>Sitio web de bienestar y relajación con galería de servicios y contacto.</p>
+          <div class="galeria-links">
+            <a href="https://precious-entremet-3b87cb.netlify.app/" target="_blank" title="Abrir Proyecto en Nueva Pestaña"><i class="bx bx-link-external"></i></a>
+            <button class="preview-btn" data-url="https://precious-entremet-3b87cb.netlify.app/" data-title="Spa CAAOH" title="Vista Previa en Vivo"><i class="bx bx-show"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal para vista previa en vivo de tus proyectos Netlify -->
+  <div class="modal" id="previewModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modalTitle">Vista Previa del Proyecto</h3>
+        <div class="modal-actions">
+          <a id="modalExternalLink" href="#" target="_blank" class="btn btn-sm">Abrir sitio <i class="bx bx-link-external"></i></a>
+          <span class="close-modal" id="closeModal">&times;</span>
+        </div>
+      </div>
+      <iframe id="modalIframe" src="" title="Vista previa del proyecto"></iframe>
+    </div>
+  </div>
+
+  <!-- ================= 4. SECCIÓN TESTIMONIOS ================= -->
+  <section class="testimonios" id="testimonios">
+    <h2 class="heading"><span>Testimonios</span> Reales</h2>
+    <p class="section-subtitle">Opiniones de mi docente y compañeros de carrera sobre mi trabajo</p>
+
+    <div class="testimonios-container">
+      <!-- TESTIMONIO DE TU PROFESOR -->
+      <div class="testimonio-card">
+        <div class="testimonio-header">
+          <img src="img/docente1.jpg" alt="Docente" />
+          <div>
+            <!-- EDITA AQUÍ: Nombre de tu profesor -->
+            <h4>Ing. Davila Galindo</h4>
+            <span>Docente de Redes</span>
+          </div>
+        </div>
+        <p class="testimonio-text">
+          "Johan demuestra gran compromiso y dominio en la estructuración de interfaces web responsivas, aplicando buenas prácticas en HTML5, CSS3 y JavaScript."
+        </p>
+        <div class="stars">
+          <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+        </div>
+      </div>
+
+      <!-- TESTIMONIO DE TU COMPAÑERO 1 -->
+      <div class="testimonio-card">
+        <div class="testimonio-header">
+          <img src="img/companero1.jpg" alt="Compañero 1" />
+          <div>
+            <!-- EDITA AQUÍ: Nombre de tu compañero 1 -->
+            <h4>Luis Gastelo</h4>
+            <span>Estudiante de Desarrollo Web</span>
+          </div>
+        </div>
+        <p class="testimonio-text">
+          "Trabajar en equipo con Johan siempre es fluido. Aporta ideas creativas para el diseño y resuelve rápido los problemas de lógica en JavaScript."
+        </p>
+        <div class="stars">
+          <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+        </div>
+      </div>
+
+      <!-- TESTIMONIO DE TU COMPAÑERO 2 -->
+      <div class="testimonio-card">
+        <div class="testimonio-header">
+          <img src="img/companero2.jpg" alt="Compañero 2" />
+          <div>
+            <!-- EDITA AQUÍ: Nombre de tu compañero 2 -->
+            <h4>Imanol Espiritu</h4>
+            <span>Estudiante de Sistemas / Web</span>
+          </div>
+        </div>
+        <p class="testimonio-text">
+          "Destaca por su dedicación y detalle visual. Sus proyectos siempre están bien organizados tanto en el código como en la experiencia de usuario."
+        </p>
+        <div class="stars">
+          <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 5. SECCIÓN CONTACTOS ================= -->
+  <section class="contactos" id="contactos">
+    <h2 class="heading"><span>Contáctame</span></h2>
+    <p class="section-subtitle">¿Tienes un proyecto o consulta? Escríbeme directamente</p>
+
+    <!-- EDITA AQUÍ: Cambia 'tu-correo@gmail.com' por tu correo real para recibir mensajes -->
+    <form id="contactForm" action="https://formsubmit.co/ajax/tu-correo@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Nuevo mensaje desde el Portafolio de Johan Kano" />
+      <input type="hidden" name="_captcha" value="false" />
+
+      <div class="input-box">
+        <input type="text" name="nombre" id="nombre" placeholder="Tu Nombre Completo" required />
+        <input type="email" name="email" id="email" placeholder="Tu Correo Electrónico" required />
+      </div>
+
+      <div class="input-box">
+        <input type="tel" name="telefono" id="telefono" placeholder="Tu Teléfono / WhatsApp" />
+        <input type="text" name="asunto" id="asunto" placeholder="Asunto del Mensaje" required />
+      </div>
+
+      <textarea name="mensaje" id="mensaje" cols="30" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+      <button type="submit" class="btn" id="submitBtn">Enviar Mensaje</button>
+      <p id="formStatus" class="form-status"></p>
+    </form>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>&copy; 2026 <strong>Johan Kano</strong> | Todos los derechos reservados.</p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#inicio"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
